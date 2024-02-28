@@ -15,10 +15,7 @@ function App() {
 
   const updateTodo = (id, todo) => {
     setTodos((prev) =>
-      prev.map((prevTodo) => {
-        if (prevTodo.id === id) todo;
-        prevTodo;
-      })
+      prev.map((prevTodo) => prevTodo.id === id ? todo : prevTodo)
     );
   };
 
