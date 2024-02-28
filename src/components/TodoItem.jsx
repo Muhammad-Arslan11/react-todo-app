@@ -9,7 +9,7 @@ function TodoItem({ todo }) {
 
     const editTodo = () =>{
         updateTodo(todo.id, {...todo, todo: todoMsg})
-        setIsTodoEditableisTodoEditble(false)
+        setIsTodoEditable(false)
         }
         
         const toggleCompleted = () =>{
